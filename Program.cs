@@ -29,6 +29,22 @@ namespace diesdas
             else Console.WriteLine("KEINS VON DENEN AMK!");
 
             //SWITCH-STATEMENT
+            int Fall = 1;
+
+            switch (Fall)
+            {
+                case 1:
+                    Console.WriteLine("Fall 1");
+                    break;
+                case 2:
+                    Console.WriteLine("Fall 2");
+                    break;
+                case 3:
+                    Console.WriteLine("Fall 3");
+                default:
+                    Console.WriteLine("Ein Fehler ist aufgetreten");
+                    break;
+            }
 
             //ARRAY
             int[] listeVonZahlen = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -42,6 +58,12 @@ namespace diesdas
             }
 
             //WHILE SCHLEIFE
+            int zahl = 0;
+            while (zahl < 50)
+            {
+                Console.WriteLine(zahl);
+                zahl++;
+            }
 
             //NORMALE BERECHNUNGEN
             int ersteZahl = 10;
@@ -51,10 +73,24 @@ namespace diesdas
             Console.WriteLine(ersteZahl / zweiteZahl);
             Console.WriteLine(ersteZahl * zweiteZahl);
             Console.WriteLine(ersteZahl % zweiteZahl);
+        }
 
             //OBJEKTORIENTE PROGRAMMIERUNG
+            public class Hund
+            {
+            public string Name;
+            public DateTime Bday;
+            public bool IstBissig;
 
+            public string Bellen()
+            {
+                return "Wuff";
+            }
 
-        }
+            }
+            
+    
+
+        
     }
 }
