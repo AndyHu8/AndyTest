@@ -75,9 +75,10 @@ namespace diesdas
             Console.WriteLine(ersteZahl % zweiteZahl);
         }
 
+
             //OBJEKTORIENTE PROGRAMMIERUNG
-            public class Hund
-            {
+        public class Hund
+        {
             public string Name;
             public DateTime Bday;
             public bool IstBissig;
@@ -87,8 +88,28 @@ namespace diesdas
                 return "Wuff";
             }
 
-            }
-            
+        }
+
+        static void Variables(string[] args)
+        {
+            //Variables
+            int a = 5;
+            int b = 2;
+
+            b = a;
+            a = -3;
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            int a = 5;
+            int b = 2;
+
+            b = a;
+            a = -3;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+     
     
 
         
